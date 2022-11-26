@@ -37,20 +37,15 @@ namespace IS._1_20_DvornyjVA
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxError1 = new System.Windows.Forms.TextBox();
             this.textBoxError2 = new System.Windows.Forms.TextBox();
-            this.textBoxError3 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -123,42 +118,12 @@ namespace IS._1_20_DvornyjVA
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(32, 271);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(27, 26);
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.panel3.Location = new System.Drawing.Point(32, 299);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(240, 1);
-            this.panel3.TabIndex = 8;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(62, 275);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(210, 15);
-            this.textBox3.TabIndex = 7;
-            this.textBox3.Text = "Почта";
-            // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.button1.Location = new System.Drawing.Point(32, 323);
+            this.button1.Location = new System.Drawing.Point(32, 285);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(240, 41);
             this.button1.TabIndex = 10;
@@ -187,17 +152,6 @@ namespace IS._1_20_DvornyjVA
             this.textBoxError2.Name = "textBoxError2";
             this.textBoxError2.Size = new System.Drawing.Size(210, 15);
             this.textBoxError2.TabIndex = 12;
-            // 
-            // textBoxError3
-            // 
-            this.textBoxError3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBoxError3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxError3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxError3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.textBoxError3.Location = new System.Drawing.Point(62, 302);
-            this.textBoxError3.Name = "textBoxError3";
-            this.textBoxError3.Size = new System.Drawing.Size(210, 15);
-            this.textBoxError3.TabIndex = 13;
             // 
             // button2
             // 
@@ -232,7 +186,7 @@ namespace IS._1_20_DvornyjVA
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.button4.Location = new System.Drawing.Point(32, 382);
+            this.button4.Location = new System.Drawing.Point(32, 344);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(240, 41);
             this.button4.TabIndex = 16;
@@ -244,17 +198,13 @@ namespace IS._1_20_DvornyjVA
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(302, 437);
+            this.ClientSize = new System.Drawing.Size(302, 406);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBoxError3);
             this.Controls.Add(this.textBoxError2);
             this.Controls.Add(this.textBoxError1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -270,7 +220,6 @@ namespace IS._1_20_DvornyjVA
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,13 +234,9 @@ namespace IS._1_20_DvornyjVA
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxError1;
         private System.Windows.Forms.TextBox textBoxError2;
-        private System.Windows.Forms.TextBox textBoxError3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;

@@ -39,7 +39,7 @@ namespace IS._1_20_DvornyjVA
             // устанавливаем соединение с БД
             conn.Open();
             // запрос
-            string sql = $"SELECT fio_employee, id_employee, login, email From Employee WHERE login='{login_user}'";
+            string sql = $"SELECT fio_employee, id_employee, login From Employee WHERE login='{login_user}'";
             // объект для выполнения SQL-запроса
             MySqlCommand command = new MySqlCommand(sql, conn);
             // объект для чтения ответа сервера
@@ -61,7 +61,6 @@ namespace IS._1_20_DvornyjVA
             InitializeComponent();
             textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None; //скрытие рамок у textbox
             textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None; //скрытие рамок у textbox
-            textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None; //скрытие рамок у textbox
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -72,7 +71,7 @@ namespace IS._1_20_DvornyjVA
         private void button1_Click(object sender, EventArgs e)
         {
             //Запрос в БД на предмет того, если ли строка с подходящим логином, паролем и почтой
-            string sql = "SELECT * FROM Employee WHERE login = @un and password= @up and email= @ue";
+            string sql = "SELECT * FROM Employee WHERE login = @un and password= @up";
             //Открытие соединения
             conn.Open();
             //Объявляем таблицу
@@ -84,11 +83,9 @@ namespace IS._1_20_DvornyjVA
             //Определяем параметры
             command.Parameters.Add("@un", MySqlDbType.VarChar, 25);
             command.Parameters.Add("@up", MySqlDbType.VarChar, 25);
-            command.Parameters.Add("@ue", MySqlDbType.VarChar, 25);
             //Присваиваем параметрам значение
             command.Parameters["@un"].Value = textBox1.Text;
             command.Parameters["@up"].Value = sha256(textBox2.Text);
-            command.Parameters["@ue"].Value = textBox3.Text;
             //Заносим команду в адаптер
             adapter.SelectCommand = command;
             //Заполняем таблицу
@@ -112,7 +109,6 @@ namespace IS._1_20_DvornyjVA
                 //Отобразить сообщение о том, что авторизаия неуспешна
                 textBoxError1.Text = "Неверные данные авторизации!";
                 textBoxError2.Text = "Неверные данные авторизации!";
-                textBoxError3.Text = "Неверные данные авторизации!";
             }
 
         }
