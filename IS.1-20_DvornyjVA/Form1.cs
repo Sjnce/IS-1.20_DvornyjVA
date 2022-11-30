@@ -99,9 +99,9 @@ namespace IS._1_20_DvornyjVA
                 Auth.auth = true;
                 //Достаем данные пользователя в случае успеха
                 GetUserInfo(textBox1.Text);
-                MainForm mf = new MainForm();
-                mf.ShowDialog();
                 //Закрываем форму
+                MainForm mf = new MainForm();
+                mf.Show();
                 this.Close();
             }
             else
@@ -110,7 +110,6 @@ namespace IS._1_20_DvornyjVA
                 textBoxError1.Text = "Неверные данные авторизации!";
                 textBoxError2.Text = "Неверные данные авторизации!";
             }
-
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -15,9 +15,7 @@ namespace IS._1_20_DvornyjVA
         //Статичное поле, которое хранит значения ФИО пользователя
         public static string auth_fio = null;
         //Статичное поле, которое хранит количество привелегий пользователя
-        /*
-         * public static int auth_role = 0;
-         */
+        public static string auth_role;
     }
     static class Program
     {
@@ -30,6 +28,7 @@ namespace IS._1_20_DvornyjVA
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            Application.Run(new MainForm()); //открытие второй формы, после закрытия первой
         }
     }
 }

@@ -223,7 +223,7 @@ namespace IS._1_20_DvornyjVA
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.panel6.Location = new System.Drawing.Point(31, 88);
+            this.panel6.Location = new System.Drawing.Point(31, 83);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(240, 1);
             this.panel6.TabIndex = 36;
@@ -232,7 +232,7 @@ namespace IS._1_20_DvornyjVA
             // 
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(31, 60);
+            this.pictureBox6.Location = new System.Drawing.Point(31, 55);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(27, 26);
             this.pictureBox6.TabIndex = 35;
@@ -244,7 +244,7 @@ namespace IS._1_20_DvornyjVA
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox6.Location = new System.Drawing.Point(61, 64);
+            this.textBox6.Location = new System.Drawing.Point(61, 59);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(210, 15);
             this.textBox6.TabIndex = 34;
@@ -255,7 +255,7 @@ namespace IS._1_20_DvornyjVA
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(302, 437);
+            this.ClientSize = new System.Drawing.Size(302, 411);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.textBox6);
@@ -277,6 +277,7 @@ namespace IS._1_20_DvornyjVA
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

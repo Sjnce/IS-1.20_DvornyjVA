@@ -42,7 +42,6 @@ namespace IS._1_20_DvornyjVA
             this.textBoxError2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -52,9 +51,9 @@ namespace IS._1_20_DvornyjVA
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(99, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(84, 54);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(106, 101);
+            this.pictureBox1.Size = new System.Drawing.Size(138, 128);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -64,7 +63,7 @@ namespace IS._1_20_DvornyjVA
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.Location = new System.Drawing.Point(62, 177);
+            this.textBox1.Location = new System.Drawing.Point(63, 232);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(210, 15);
             this.textBox1.TabIndex = 1;
@@ -76,7 +75,7 @@ namespace IS._1_20_DvornyjVA
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(62, 225);
+            this.textBox2.Location = new System.Drawing.Point(63, 280);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(210, 15);
             this.textBox2.TabIndex = 2;
@@ -86,7 +85,7 @@ namespace IS._1_20_DvornyjVA
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(32, 173);
+            this.pictureBox2.Location = new System.Drawing.Point(33, 228);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(27, 26);
             this.pictureBox2.TabIndex = 3;
@@ -95,7 +94,7 @@ namespace IS._1_20_DvornyjVA
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.panel1.Location = new System.Drawing.Point(32, 201);
+            this.panel1.Location = new System.Drawing.Point(33, 256);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 1);
             this.panel1.TabIndex = 4;
@@ -103,7 +102,7 @@ namespace IS._1_20_DvornyjVA
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.panel2.Location = new System.Drawing.Point(32, 249);
+            this.panel2.Location = new System.Drawing.Point(33, 304);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(240, 1);
             this.panel2.TabIndex = 5;
@@ -112,7 +111,7 @@ namespace IS._1_20_DvornyjVA
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(32, 221);
+            this.pictureBox3.Location = new System.Drawing.Point(33, 276);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(27, 26);
             this.pictureBox3.TabIndex = 6;
@@ -123,7 +122,7 @@ namespace IS._1_20_DvornyjVA
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.button1.Location = new System.Drawing.Point(32, 285);
+            this.button1.Location = new System.Drawing.Point(33, 350);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(240, 41);
             this.button1.TabIndex = 10;
@@ -136,8 +135,8 @@ namespace IS._1_20_DvornyjVA
             this.textBoxError1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.textBoxError1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxError1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxError1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.textBoxError1.Location = new System.Drawing.Point(62, 204);
+            this.textBoxError1.ForeColor = System.Drawing.Color.Red;
+            this.textBoxError1.Location = new System.Drawing.Point(63, 259);
             this.textBoxError1.Name = "textBoxError1";
             this.textBoxError1.Size = new System.Drawing.Size(210, 15);
             this.textBoxError1.TabIndex = 11;
@@ -147,8 +146,8 @@ namespace IS._1_20_DvornyjVA
             this.textBoxError2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.textBoxError2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxError2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxError2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.textBoxError2.Location = new System.Drawing.Point(62, 252);
+            this.textBoxError2.ForeColor = System.Drawing.Color.Red;
+            this.textBoxError2.Location = new System.Drawing.Point(63, 307);
             this.textBoxError2.Name = "textBoxError2";
             this.textBoxError2.Size = new System.Drawing.Size(210, 15);
             this.textBoxError2.TabIndex = 12;
@@ -181,25 +180,12 @@ namespace IS._1_20_DvornyjVA
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
-            // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.button4.Location = new System.Drawing.Point(32, 344);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(240, 41);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Регистрация";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(302, 406);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(302, 405);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBoxError2);
@@ -239,7 +225,6 @@ namespace IS._1_20_DvornyjVA
         private System.Windows.Forms.TextBox textBoxError2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
     }
 }
 

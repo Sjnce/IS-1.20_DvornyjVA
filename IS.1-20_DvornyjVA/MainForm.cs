@@ -16,5 +16,20 @@ namespace IS._1_20_DvornyjVA
         {
             InitializeComponent();
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
