@@ -13,8 +13,10 @@ namespace IS._1_20_DvornyjVA
 {
     public partial class Form1 : Form
     {
+
+        #region подключение к бд
         // строка подключения к БД
-        string connStr = "server=10.90.12.110;port=33333;user=st_1_20_10;database=is_1_20_st10_KURS;password=34088849;";
+        string connStr = "server=chuc.caseum.ru;port=33333;user=st_1_20_10;database=is_1_20_st10_KURS;password=34088849;"; // chuc.caseum.ru - дома, 10.90.12.110 - в чюке
         //Переменная соединения
         MySqlConnection conn;
         //Логин и пароль к данной форме Вы сможете посмотреть в БД db_test таблице t_user
@@ -56,6 +58,8 @@ namespace IS._1_20_DvornyjVA
             // закрываем соединение с БД
             conn.Close();
         }
+#endregion
+
         public Form1()
         {
             InitializeComponent();
@@ -68,9 +72,10 @@ namespace IS._1_20_DvornyjVA
             conn = new MySqlConnection(connStr);
         }
 
+        #region Вход в главную форму
         private void button1_Click(object sender, EventArgs e)
         {
-            //Запрос в БД на предмет того, если ли строка с подходящим логином, паролем и почтой
+            //Запрос в БД на предмет того, если ли строка с подходящим логином, паролем
             string sql = "SELECT * FROM Employee WHERE login = @un and password= @up";
             //Открытие соединения
             conn.Open();
@@ -107,10 +112,11 @@ namespace IS._1_20_DvornyjVA
             else
             {
                 //Отобразить сообщение о том, что авторизаия неуспешна
-                textBoxError1.Text = "Неверные данные авторизации!";
-                textBoxError2.Text = "Неверные данные авторизации!";
+                labelError1.Text = "Неверные данные авторизации!";
+                labelError2.Text = "Неверные данные авторизации!";
             }
         }
+        #endregion
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -120,6 +126,16 @@ namespace IS._1_20_DvornyjVA
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
