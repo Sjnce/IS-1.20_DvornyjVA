@@ -17,6 +17,8 @@ namespace IS._1_20_DvornyjVA
             InitializeComponent();
             customizeButton();
         }
+
+        #region Кастом формы и кнопок
         private void customizeButton()
         {
             panel1.Visible = false;
@@ -47,6 +49,7 @@ namespace IS._1_20_DvornyjVA
                 ItemPanel.Visible = false;
             }
         }
+        #endregion
 
         #region Кнопки "Сортировка товара"
         private void button1_Click(object sender, EventArgs e) // Сортировка товара
@@ -76,6 +79,7 @@ namespace IS._1_20_DvornyjVA
             //hideVisiblePanel1();
         }
         #endregion 
+
         #region Кнопки "Сотрудники"
         private void button8_Click(object sender, EventArgs e) // Сотрудники
         {
@@ -90,12 +94,14 @@ namespace IS._1_20_DvornyjVA
             openNewForm(new Form2());
         }
         #endregion 
+
         #region Кнопки "Поставка"
         private void button12_Click(object sender, EventArgs e) // Поставка товара
         {
             showVisiblePanel(panel3);
         }
         #endregion 
+
         #region Кнопки "Продажа"
         private void button19_Click(object sender, EventArgs e) // Продажа товара
         {
@@ -103,7 +109,6 @@ namespace IS._1_20_DvornyjVA
         }
         #endregion
 
- 
         #region Форма в форме
         private Form activeForm = null;
         private void openNewForm(Form openNewForm)
@@ -138,6 +143,11 @@ namespace IS._1_20_DvornyjVA
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
         }

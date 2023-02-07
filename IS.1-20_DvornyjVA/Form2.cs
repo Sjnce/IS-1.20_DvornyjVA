@@ -13,10 +13,14 @@ namespace IS._1_20_DvornyjVA
 {
     public partial class Form2 : Form
     {
+
+        #region Подключение к бд
         // строка подключения к БД
         string connStr = "server=chuc.caseum.ru;port=33333;user=st_1_20_10;database=is_1_20_st10_KURS;password=34088849;"; // chuc.caseum.ru - дома, 10.90.12.110 - в чюке
         //Переменная соединения
         MySqlConnection conn;
+        #endregion
+
         public Form2()
         {
             InitializeComponent();
@@ -26,18 +30,7 @@ namespace IS._1_20_DvornyjVA
         {
             conn = new MySqlConnection(connStr);
         }
-        static string sha256(string randomString)
-        {
-            //Тут происходит криптографическая магия. Смысл данного метода заключается в том, что строка залетает в метод
-            var crypt = new System.Security.Cryptography.SHA256Managed();
-            var hash = new System.Text.StringBuilder();
-            byte[] crypto = crypt.ComputeHash(Encoding.UTF8.GetBytes(randomString));
-            foreach (byte theByte in crypto)
-            {
-                hash.Append(theByte.ToString("x2"));
-            }
-            return hash.ToString();
-        }
+
         #region Форма в форме
         private Form activeForm = null;
         private void openNewForm(Form openNewForm)
@@ -55,6 +48,23 @@ namespace IS._1_20_DvornyjVA
             openNewForm.Show();
         }
         #endregion
+
+        #region Хеширование
+        static string sha256(string randomString)
+        {
+            //Тут происходит криптографическая магия. Смысл данного метода заключается в том, что строка залетает в метод
+            var crypt = new System.Security.Cryptography.SHA256Managed();
+            var hash = new System.Text.StringBuilder();
+            byte[] crypto = crypt.ComputeHash(Encoding.UTF8.GetBytes(randomString));
+            foreach (byte theByte in crypto)
+            {
+                hash.Append(theByte.ToString("x2"));
+            }
+            return hash.ToString();
+        }
+        #endregion
+
+        #region Кнопка регистрации
         private void button4_Click(object sender, EventArgs e)
         {
             string fio_employee = textBox5.Text;
@@ -71,5 +81,7 @@ namespace IS._1_20_DvornyjVA
             Update();
             openNewForm(new Form3());
         }
+        #endregion
+
     }
 }

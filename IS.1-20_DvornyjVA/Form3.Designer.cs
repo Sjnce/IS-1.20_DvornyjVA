@@ -62,17 +62,16 @@ namespace IS._1_20_DvornyjVA
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.label1.Location = new System.Drawing.Point(3, 124);
+            this.label1.Location = new System.Drawing.Point(48, 134);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 16);
+            this.label1.Size = new System.Drawing.Size(140, 16);
             this.label1.TabIndex = 38;
-            this.label1.Text = "Сотрудник успешно зарегестрирован";
+            this.label1.Text = "Действие выполненно";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form3

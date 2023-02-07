@@ -462,6 +462,7 @@ namespace IS._1_20_DvornyjVA
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(619, 410);
             this.panel6.TabIndex = 19;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // MainForm
             // 
