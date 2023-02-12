@@ -42,7 +42,6 @@ namespace IS._1_20_DvornyjVA
             this.button12 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -81,10 +80,11 @@ namespace IS._1_20_DvornyjVA
             this.panelButton.Controls.Add(this.button1);
             this.panelButton.Controls.Add(this.panelLogo);
             this.panelButton.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelButton.Location = new System.Drawing.Point(0, 0);
+            this.panelButton.Location = new System.Drawing.Point(0, 41);
             this.panelButton.Name = "panelButton";
-            this.panelButton.Size = new System.Drawing.Size(210, 451);
+            this.panelButton.Size = new System.Drawing.Size(210, 592);
             this.panelButton.TabIndex = 0;
+            this.panelButton.Paint += new System.Windows.Forms.PaintEventHandler(this.panelButton_Paint);
             // 
             // panel4
             // 
@@ -92,10 +92,11 @@ namespace IS._1_20_DvornyjVA
             this.panel4.Controls.Add(this.button16);
             this.panel4.Controls.Add(this.button18);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 541);
+            this.panel4.Location = new System.Drawing.Point(0, 513);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(193, 62);
+            this.panel4.Size = new System.Drawing.Size(210, 62);
             this.panel4.TabIndex = 12;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // button16
             // 
@@ -107,11 +108,12 @@ namespace IS._1_20_DvornyjVA
             this.button16.Location = new System.Drawing.Point(0, 30);
             this.button16.Name = "button16";
             this.button16.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button16.Size = new System.Drawing.Size(193, 32);
+            this.button16.Size = new System.Drawing.Size(210, 32);
             this.button16.TabIndex = 2;
             this.button16.Text = "Сортировка по дням";
             this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button18
             // 
@@ -123,11 +125,12 @@ namespace IS._1_20_DvornyjVA
             this.button18.Location = new System.Drawing.Point(0, 0);
             this.button18.Name = "button18";
             this.button18.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button18.Size = new System.Drawing.Size(193, 30);
+            this.button18.Size = new System.Drawing.Size(210, 30);
             this.button18.TabIndex = 0;
             this.button18.Text = "Продавцы";
             this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
@@ -135,10 +138,10 @@ namespace IS._1_20_DvornyjVA
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button19.Font = new System.Drawing.Font("Arial", 9.75F);
             this.button19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.button19.Location = new System.Drawing.Point(0, 511);
+            this.button19.Location = new System.Drawing.Point(0, 483);
             this.button19.Name = "button19";
             this.button19.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button19.Size = new System.Drawing.Size(193, 30);
+            this.button19.Size = new System.Drawing.Size(210, 30);
             this.button19.TabIndex = 11;
             this.button19.Text = "Продажа товара";
             this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -152,10 +155,11 @@ namespace IS._1_20_DvornyjVA
             this.panel3.Controls.Add(this.button10);
             this.panel3.Controls.Add(this.button11);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 420);
+            this.panel3.Location = new System.Drawing.Point(0, 392);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(193, 91);
+            this.panel3.Size = new System.Drawing.Size(210, 91);
             this.panel3.TabIndex = 10;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // button9
             // 
@@ -167,11 +171,12 @@ namespace IS._1_20_DvornyjVA
             this.button9.Location = new System.Drawing.Point(0, 60);
             this.button9.Name = "button9";
             this.button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(193, 31);
+            this.button9.Size = new System.Drawing.Size(210, 31);
             this.button9.TabIndex = 2;
             this.button9.Text = "Сортировка по дням";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -183,11 +188,12 @@ namespace IS._1_20_DvornyjVA
             this.button10.Location = new System.Drawing.Point(0, 30);
             this.button10.Name = "button10";
             this.button10.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(193, 30);
+            this.button10.Size = new System.Drawing.Size(210, 30);
             this.button10.TabIndex = 1;
             this.button10.Text = "Поставщики";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -199,11 +205,12 @@ namespace IS._1_20_DvornyjVA
             this.button11.Location = new System.Drawing.Point(0, 0);
             this.button11.Name = "button11";
             this.button11.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(193, 30);
+            this.button11.Size = new System.Drawing.Size(210, 30);
             this.button11.TabIndex = 0;
             this.button11.Text = "Приём товара";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -211,10 +218,10 @@ namespace IS._1_20_DvornyjVA
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Arial", 9.75F);
             this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.button12.Location = new System.Drawing.Point(0, 390);
+            this.button12.Location = new System.Drawing.Point(0, 362);
             this.button12.Name = "button12";
             this.button12.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(193, 30);
+            this.button12.Size = new System.Drawing.Size(210, 30);
             this.button12.TabIndex = 9;
             this.button12.Text = "Поставка товара";
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -225,14 +232,14 @@ namespace IS._1_20_DvornyjVA
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.panel2.Controls.Add(this.button13);
-            this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button7);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 272);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(193, 118);
+            this.panel2.Size = new System.Drawing.Size(210, 90);
             this.panel2.TabIndex = 4;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // button13
             // 
@@ -241,32 +248,15 @@ namespace IS._1_20_DvornyjVA
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Arial", 9.75F);
             this.button13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.button13.Location = new System.Drawing.Point(0, 88);
+            this.button13.Location = new System.Drawing.Point(0, 60);
             this.button13.Name = "button13";
             this.button13.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(193, 30);
+            this.button13.Size = new System.Drawing.Size(210, 30);
             this.button13.TabIndex = 3;
-            this.button13.Text = "Зарегестрировать";
+            this.button13.Text = "Изменить список";
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.button5.Location = new System.Drawing.Point(0, 60);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(193, 28);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Удалить";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -278,11 +268,12 @@ namespace IS._1_20_DvornyjVA
             this.button6.Location = new System.Drawing.Point(0, 30);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(193, 30);
+            this.button6.Size = new System.Drawing.Size(210, 30);
             this.button6.TabIndex = 1;
             this.button6.Text = "Продавцы";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -294,11 +285,12 @@ namespace IS._1_20_DvornyjVA
             this.button7.Location = new System.Drawing.Point(0, 0);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(193, 30);
+            this.button7.Size = new System.Drawing.Size(210, 30);
             this.button7.TabIndex = 0;
             this.button7.Text = "Администраторы";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -309,9 +301,9 @@ namespace IS._1_20_DvornyjVA
             this.button8.Location = new System.Drawing.Point(0, 242);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(193, 30);
+            this.button8.Size = new System.Drawing.Size(210, 30);
             this.button8.TabIndex = 3;
-            this.button8.Text = "Сотрудники";
+            this.button8.Text = "Персонал";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
@@ -325,8 +317,9 @@ namespace IS._1_20_DvornyjVA
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 151);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(193, 91);
+            this.panel1.Size = new System.Drawing.Size(210, 91);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button4
             // 
@@ -338,7 +331,7 @@ namespace IS._1_20_DvornyjVA
             this.button4.Location = new System.Drawing.Point(0, 60);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(193, 31);
+            this.button4.Size = new System.Drawing.Size(210, 31);
             this.button4.TabIndex = 2;
             this.button4.Text = "По количеству";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -355,7 +348,7 @@ namespace IS._1_20_DvornyjVA
             this.button3.Location = new System.Drawing.Point(0, 30);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(193, 30);
+            this.button3.Size = new System.Drawing.Size(210, 30);
             this.button3.TabIndex = 1;
             this.button3.Text = "По цене";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -372,9 +365,9 @@ namespace IS._1_20_DvornyjVA
             this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(193, 30);
+            this.button2.Size = new System.Drawing.Size(210, 30);
             this.button2.TabIndex = 0;
-            this.button2.Text = "По дате";
+            this.button2.Text = "Сортировка товара";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -388,9 +381,9 @@ namespace IS._1_20_DvornyjVA
             this.button1.Location = new System.Drawing.Point(0, 121);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(193, 30);
+            this.button1.Size = new System.Drawing.Size(210, 30);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Сортировка товара";
+            this.button1.Text = "Товар";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -402,8 +395,9 @@ namespace IS._1_20_DvornyjVA
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(193, 121);
+            this.panelLogo.Size = new System.Drawing.Size(210, 121);
             this.panelLogo.TabIndex = 0;
+            this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
             // 
             // pictureBox1
             // 
@@ -414,6 +408,7 @@ namespace IS._1_20_DvornyjVA
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button14
             // 
@@ -421,7 +416,7 @@ namespace IS._1_20_DvornyjVA
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.button14.Location = new System.Drawing.Point(534, 1);
+            this.button14.Location = new System.Drawing.Point(1202, 0);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(40, 37);
             this.button14.TabIndex = 17;
@@ -435,7 +430,7 @@ namespace IS._1_20_DvornyjVA
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.button15.Location = new System.Drawing.Point(580, 1);
+            this.button15.Location = new System.Drawing.Point(1248, 0);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(40, 37);
             this.button15.TabIndex = 16;
@@ -449,9 +444,9 @@ namespace IS._1_20_DvornyjVA
             this.panel5.Controls.Add(this.button15);
             this.panel5.Controls.Add(this.button14);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(210, 0);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(619, 41);
+            this.panel5.Size = new System.Drawing.Size(1291, 41);
             this.panel5.TabIndex = 18;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
@@ -460,7 +455,7 @@ namespace IS._1_20_DvornyjVA
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(210, 41);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(619, 410);
+            this.panel6.Size = new System.Drawing.Size(1081, 592);
             this.panel6.TabIndex = 19;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
@@ -469,10 +464,10 @@ namespace IS._1_20_DvornyjVA
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(829, 451);
+            this.ClientSize = new System.Drawing.Size(1291, 633);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panelButton);
+            this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -513,7 +508,6 @@ namespace IS._1_20_DvornyjVA
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;

@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace IS._1_20_DvornyjVA
 {
-    public partial class Form1 : Form
+    public partial class InForm : Form
     {
 
         #region подключение к бд
@@ -60,7 +60,7 @@ namespace IS._1_20_DvornyjVA
         }
 #endregion
 
-        public Form1()
+        public InForm()
         {
             InitializeComponent();
             textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None; //скрытие рамок у textbox
