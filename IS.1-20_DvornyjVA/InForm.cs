@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Threading;
 
 namespace IS._1_20_DvornyjVA
 {
@@ -16,7 +17,7 @@ namespace IS._1_20_DvornyjVA
 
         #region подключение к бд
         // строка подключения к БД
-        string connStr = "server=chuc.caseum.ru;port=33333;user=st_1_20_10;database=is_1_20_st10_KURS;password=34088849;"; // chuc.caseum.ru - дома, 10.90.12.110 - в чюке
+        string connStr = "server=10.90.12.110;port=33333;user=st_1_20_10;database=is_1_20_st10_KURS;password=34088849;"; // chuc.caseum.ru - дома, 10.90.12.110 - в чюке
         //Переменная соединения
         MySqlConnection conn;
         //Логин и пароль к данной форме Вы сможете посмотреть в БД db_test таблице t_user
@@ -73,8 +74,12 @@ namespace IS._1_20_DvornyjVA
         }
 
         #region Вход в главную форму
-        private void button1_Click(object sender, EventArgs e)
+        public delegate void ThreadStart();
+        void Vhod()
         {
+            this.Invoke(new Action(() => { this.Hide(); })); // Новый поток
+            LoadingForm loa = new LoadingForm();
+            loa.Show();
             //Запрос в БД на предмет того, если ли строка с подходящим логином, паролем
             string sql = "SELECT * FROM Employee WHERE login = @un and password= @up";
             //Открытие соединения
@@ -104,10 +109,9 @@ namespace IS._1_20_DvornyjVA
                 Auth.auth = true;
                 //Достаем данные пользователя в случае успеха
                 GetUserInfo(textBox1.Text);
-                //Закрываем форму
-                MainForm mf = new MainForm();
-                mf.Show();
-                this.Close();
+
+                Thread.Sleep(5000); // Новый поток
+                textBox1.Invoke(new Action(() => { this.Close(); })); // Новый поток
             }
             else
             {
@@ -115,6 +119,12 @@ namespace IS._1_20_DvornyjVA
                 labelError1.Text = "Неверные данные авторизации!";
                 labelError2.Text = "Неверные данные авторизации!";
             }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            Thread myThread1 = new Thread(Vhod); // Создаем новый поток
+            myThread1.Start();
         }
         #endregion
 

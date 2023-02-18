@@ -85,10 +85,7 @@ namespace IS._1_20_DvornyjVA
         {
             showVisiblePanel(panel2);
         }
-        private void button5_Click(object sender, EventArgs e)
-        {
-            openNewForm(new DeleteForm());
-        }
+
         private void button13_Click(object sender, EventArgs e) // Регистрация
         {
             openNewForm(new EmpForm());

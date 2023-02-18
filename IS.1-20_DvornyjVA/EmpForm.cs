@@ -16,7 +16,7 @@ namespace IS._1_20_DvornyjVA
 
         #region Подключение к бд
         // строка подключения к БД
-        string connStr = "server=chuc.caseum.ru;port=33333;user=st_1_20_10;database=is_1_20_st10_KURS;password=34088849;"; // chuc.caseum.ru - дома, 10.90.12.110 - в чюке
+        string connStr = "server=10.90.12.110;port=33333;user=st_1_20_10;database=is_1_20_st10_KURS;password=34088849;"; // chuc.caseum.ru - дома, 10.90.12.110 - в чюке
         //Переменная соединения
         MySqlConnection conn;
         #endregion
@@ -25,6 +25,7 @@ namespace IS._1_20_DvornyjVA
         {
             InitializeComponent();
             select();
+            dataGridView1.AllowUserToAddRows = false; // скрытие нижней строки в гриде
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -38,7 +39,7 @@ namespace IS._1_20_DvornyjVA
         {
             DataSet ds;
             ds = new DataSet();
-            string connStr = "server=chuc.caseum.ru;port=33333;user=st_1_20_10;database=is_1_20_st10_KURS;password=34088849;";
+            string connStr = "server=10.90.12.110;port=33333;user=st_1_20_10;database=is_1_20_st10_KURS;password=34088849;";
             MySqlConnection connection = new MySqlConnection(connStr);
 
             MySqlCommand command = new MySqlCommand();
@@ -191,6 +192,11 @@ namespace IS._1_20_DvornyjVA
         private void button8_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage3;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

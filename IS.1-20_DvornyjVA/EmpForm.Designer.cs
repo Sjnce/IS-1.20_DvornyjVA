@@ -261,6 +261,7 @@ namespace IS._1_20_DvornyjVA
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(780, 568);
             this.dataGridView1.TabIndex = 55;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button5
             // 

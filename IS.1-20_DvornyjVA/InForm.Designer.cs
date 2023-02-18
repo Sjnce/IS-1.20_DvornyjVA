@@ -178,7 +178,7 @@ namespace IS._1_20_DvornyjVA
             this.labelError2.Size = new System.Drawing.Size(0, 13);
             this.labelError2.TabIndex = 17;
             // 
-            // Form1
+            // InForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,7 +197,7 @@ namespace IS._1_20_DvornyjVA
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "InForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
